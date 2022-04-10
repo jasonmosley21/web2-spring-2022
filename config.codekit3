@@ -274,12 +274,28 @@
       "oAP" : "\/dev\/global\/hero.html",
       "oF" : 0
     },
+    "\/dev\/global\/hero2.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/global\/hero2.html",
+      "oF" : 0
+    },
     "\/dev\/global\/left.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/global\/left.html",
+      "oF" : 0
+    },
+    "\/dev\/global\/news.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/global\/news.html",
       "oF" : 0
     },
     "\/dev\/global\/right.kit" : {
