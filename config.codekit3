@@ -44,11 +44,34 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/beybladebanner.jpg" : {
+      "ft" : 16384,
+      "iS" : 1194262,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/beybladebanner.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/beybladelogo.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/deploy\/img\/beybladelogo.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/beybladelogohd.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/beybladelogohd.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -67,15 +90,17 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/evil dude.webp" : {
-      "ft" : 8388608,
-      "iS" : 19610,
+    "\/deploy\/img\/evildude.jpg" : {
+      "ft" : 16384,
+      "iS" : 155639,
+      "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/evil dude.webp",
+      "oAP" : "\/deploy\/img\/evildude.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
-      "ou" : "lpckwebp-default",
+      "ou" : "lpckwebp-none",
+      "q" : 100,
       "rq" : 75
     },
     "\/deploy\/img\/gingka.jpg" : {
@@ -140,6 +165,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/partshd.jpg" : {
+      "ft" : 16384,
+      "iS" : 12093,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/partshd.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/pegasus in hand.jpg" : {
       "ft" : 16384,
       "iS" : 48478,
@@ -166,6 +204,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/pegasushd.jpg" : {
+      "ft" : 16384,
+      "iS" : 17176,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/pegasushd.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/phone.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -176,23 +227,38 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/deploy\/img\/ryuga 2.webp" : {
-      "ft" : 8388608,
-      "iS" : 56142,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/ryuga 2.webp",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-default",
-      "rq" : 75
-    },
     "\/deploy\/img\/ryuga.jpg" : {
       "ft" : 16384,
       "iS" : 64193,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/ryuga.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/ryuga2.jpg" : {
+      "ft" : 16384,
+      "iS" : 444182,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/ryuga2.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/ryugahd.jpg" : {
+      "ft" : 16384,
+      "iS" : 370563,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/ryugahd.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -294,7 +360,7 @@
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/global\/news.html",
       "oF" : 0
     },
