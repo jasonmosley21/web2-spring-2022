@@ -77,12 +77,38 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/deploy\/img\/chrishd.jpg" : {
+      "ft" : 16384,
+      "iS" : 70154,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/chrishd.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/demon god.jpg" : {
       "ft" : 16384,
       "iS" : 41355,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/demon god.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/demongodhd.jpg" : {
+      "ft" : 16384,
+      "iS" : 131534,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/demongodhd.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -103,6 +129,29 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/evildudehd.jpg" : {
+      "ft" : 16384,
+      "iS" : 44960,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/evildudehd.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/facebookhd.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/facebookhd.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/deploy\/img\/gingka.jpg" : {
       "ft" : 16384,
       "iS" : 78949,
@@ -116,6 +165,29 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/gingkahd.jpg" : {
+      "ft" : 16384,
+      "iS" : 60470,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/gingkahd.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/instagramhd.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/instagramhd.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/deploy\/img\/kyoya.jpg" : {
       "ft" : 16384,
       "iS" : 89187,
@@ -128,6 +200,29 @@
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
+    },
+    "\/deploy\/img\/kyoyahd.jpg" : {
+      "ft" : 16384,
+      "iS" : 52336,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/kyoyahd.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/locationhd.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/locationhd.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/deploy\/img\/map.svg" : {
       "ft" : 2097152,
@@ -204,6 +299,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/pegasus2hd.jpg" : {
+      "ft" : 16384,
+      "iS" : 125728,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/pegasus2hd.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/pegasushd.jpg" : {
       "ft" : 16384,
       "iS" : 17176,
@@ -222,6 +330,16 @@
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/deploy\/img\/phone.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/phonehd.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/phonehd.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -246,6 +364,19 @@
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/ryuga2.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/ryuga2hd.jpg" : {
+      "ft" : 16384,
+      "iS" : 69096,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/ryuga2hd.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -288,6 +419,26 @@
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
+    },
+    "\/deploy\/img\/twitterhd.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/twitterhd.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/youtubehd.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/youtubehd.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/deploy\/index.html" : {
       "cB" : 0,
