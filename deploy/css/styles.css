@@ -358,10 +358,6 @@ template {
 /* =============
     Buttons
 ============= */
-button {
-  border: none;
-}
-
 /* =============
     Forms
 ============= */
@@ -386,11 +382,45 @@ textarea {
 /* =============
     Header
 ============= */
-header {
-  color: red;
-  font-size: 0.75rem;
+#header {
+  width: 1440px;
+  height: 103px;
+  background-color: #E34529;
 }
 
 /* =============
     Footer
 ============= */
+.floating {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.left {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #FFD507;
+  width: 487px;
+  height: 145px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "img img" "article aside";
+}
+.hero article {
+  grid-area: article;
+  width: 720px;
+  height: 72px;
+  background-color: #66636A;
+}
+.hero aside {
+  grid-area: aside;
+  width: 720px;
+  height: 72px;
+  background-color: #66636A;
+}
+.hero img {
+  grid-area: img;
+}

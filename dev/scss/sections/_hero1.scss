@@ -1,0 +1,28 @@
+.hero{
+  
+    display:grid;
+    // grid-template-columns:
+    
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "img img"
+    "article aside"
+    ;
+
+    article{
+         grid-area: article;
+         width: 720px;
+         height: 72px;
+         background-color: #66636A;
+    }
+    aside{
+        grid-area: aside;
+        width: 720px;
+         height: 72px;
+         background-color: #66636A;
+    }
+    img{
+        grid-area: img;
+        
+    }
+}
