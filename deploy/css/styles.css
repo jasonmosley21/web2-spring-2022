@@ -452,3 +452,26 @@ textarea {
 .floating #right .image {
   grid-area: image;
 }
+
+.hero2 {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: "image1" "image2";
+}
+.hero2 #image1 {
+  grid-area: image1;
+  height: 355px;
+}
+.hero2 #image2 {
+  display: grid;
+  grid-template-columns: 100% 0%;
+  grid-area: image2;
+}
+.hero2 #image2 #hero3 {
+  height: 486px;
+}
+
+.news {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+}

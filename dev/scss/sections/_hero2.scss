@@ -1,0 +1,18 @@
+.hero2{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: "image1"
+    "image2";
+    #image1{
+        grid-area: image1;
+        height: 355px;
+    }
+    #image2{
+        display: grid;
+        grid-template-columns: 100% 0%;
+        grid-area: image2;
+        #hero3{
+            height: 486px;
+        }
+    }
+}
