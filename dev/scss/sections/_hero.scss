@@ -1,0 +1,18 @@
+.hero{
+    background-color: #C22523;  
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: "img img img"
+    ". blck ."
+    ". gry .";
+    #black{
+        grid-area: blck;
+    }
+    #gry{
+        grid-area: gry;
+    }
+    #hero{
+        grid-area: img;
+        width: 100%;
+    }
+  }

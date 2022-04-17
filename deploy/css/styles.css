@@ -397,4 +397,27 @@ textarea {
 ============= */
 .search {
   background-color: #C22523;
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". search .";
+}
+.search div {
+  grid-area: search;
+}
+
+.hero {
+  background-color: #C22523;
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: "img img img" ". blck ." ". gry .";
+}
+.hero #black {
+  grid-area: blck;
+}
+.hero #gry {
+  grid-area: gry;
+}
+.hero #hero {
+  grid-area: img;
+  width: 100%;
 }
