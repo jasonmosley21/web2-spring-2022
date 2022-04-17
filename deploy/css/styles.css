@@ -421,3 +421,34 @@ textarea {
   grid-area: img;
   width: 100%;
 }
+
+.floating {
+  background-color: #9999;
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". left ." ". right .";
+}
+.floating #left {
+  grid-area: left;
+  display: grid;
+  grid-template-columns: 2, 1fr;
+  grid-template-areas: " text image";
+}
+.floating #left .text {
+  grid-area: text;
+}
+.floating #left .image {
+  grid-area: image;
+}
+.floating #right {
+  grid-area: right;
+  display: grid;
+  grid-template-columns: 2, 1fr;
+  grid-template-areas: " text image";
+}
+.floating #right .text {
+  grid-area: text;
+}
+.floating #right .image {
+  grid-area: image;
+}
