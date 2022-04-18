@@ -1,3 +1,21 @@
 /* =============
     Footer
 ============= */
+.footer{
+    background-color: #C22523;
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". footer .";
+    .links{
+        grid-area: footer;
+    .locations{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .social{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+
+    }
+}

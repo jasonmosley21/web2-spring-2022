@@ -395,6 +395,24 @@ textarea {
 /* =============
     Footer
 ============= */
+.footer {
+  background-color: #C22523;
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". footer .";
+}
+.footer .links {
+  grid-area: footer;
+}
+.footer .links .locations {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.footer .links .social {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .search {
   background-color: #C22523;
   display: grid;
@@ -474,4 +492,24 @@ textarea {
 .news {
   display: grid;
   grid-template-columns: 16px auto 16px;
+  grid-template-areas: "newimg newimg newimg" ". newtxt .";
+}
+.news .newtxt {
+  grid-area: newtxt;
+}
+.news .newimg {
+  grid-area: newimg;
+  width: 100%;
+}
+.news li {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.image {
+  width: 100%;
 }
