@@ -1,24 +1,5 @@
-.news{
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: "newimg newimg newimg"
-    ". newtxt .";
-    .newtxt{
-        grid-area: newtxt;
-    }
-    .newimg{
-        grid-area: newimg;
-        width: 100%;
-    }
-    li{
-        width: 100%;
-    }
-}
+
 ul{
     list-style: none;
     padding-left: 0;
-
-}
-.image{
-    width: 100%;
 }

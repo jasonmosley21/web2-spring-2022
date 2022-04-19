@@ -352,6 +352,20 @@ template {
 /* =============
     Base
 ============= */
+.cssgrid {
+  background-color: #C22523;
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: "banner banner banner" ". section1 ." ". section2 .";
+}
+.cssgrid .section {
+  grid-area: section1;
+}
+.cssgrid .news {
+  grid-area: banner;
+  width: 100%;
+}
+
 /* =============
     Typography
 ============= */
@@ -382,33 +396,15 @@ textarea {
 /* =============
     Header
 ============= */
-.header {
-  background-color: #C22523;
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". section .";
-}
-.header section {
-  grid-area: section;
-}
-
 /* =============
     Footer
 ============= */
-.footer {
-  background-color: #C22523;
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". footer .";
-}
-.footer .links {
-  grid-area: footer;
-}
-.footer .links .locations {
+.locations {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-.footer .links .social {
+
+.social {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
@@ -423,51 +419,37 @@ textarea {
   grid-area: search;
 }
 
-.hero {
-  background-color: #C22523;
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: "img img img" ". blck ." ". gry .";
-}
-.hero #black {
-  grid-area: blck;
-}
-.hero #gry {
-  grid-area: gry;
-}
-.hero #hero {
-  grid-area: img;
-  width: 100%;
+#blck {
+  grid-area: section1;
 }
 
-.floating {
-  background-color: #9999;
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". left ." ". right .";
+#gry {
+  grid-area: section2;
 }
-.floating #left {
-  grid-area: left;
+
+#left {
+  grid-area: section1;
   display: grid;
   grid-template-columns: 2, 1fr;
   grid-template-areas: " text image";
 }
-.floating #left .text {
+#left .text {
   grid-area: text;
 }
-.floating #left .image {
+#left .image {
   grid-area: image;
 }
-.floating #right {
-  grid-area: right;
+
+#right {
+  grid-area: section2;
   display: grid;
   grid-template-columns: 2, 1fr;
   grid-template-areas: " text image";
 }
-.floating #right .text {
+#right .text {
   grid-area: text;
 }
-.floating #right .image {
+#right .image {
   grid-area: image;
 }
 
@@ -489,27 +471,7 @@ textarea {
   height: 486px;
 }
 
-.news {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: "newimg newimg newimg" ". newtxt .";
-}
-.news .newtxt {
-  grid-area: newtxt;
-}
-.news .newimg {
-  grid-area: newimg;
-  width: 100%;
-}
-.news li {
-  width: 100%;
-}
-
 ul {
   list-style: none;
   padding-left: 0;
-}
-
-.image {
-  width: 100%;
 }

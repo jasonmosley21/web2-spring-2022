@@ -1,11 +1,6 @@
-.floating{
-    background-color: #9999;
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". left ."
-    ". right .";
+
     #left{
-        grid-area: left;
+        grid-area: section1;
         display: grid;
         grid-template-columns: (2,1fr);
         grid-template-areas: " text image";
@@ -17,7 +12,7 @@
         }
     }
     #right{
-        grid-area: right;
+        grid-area: section2;
         display: grid;
         grid-template-columns: (2,1fr);
         grid-template-areas: " text image";
@@ -28,4 +23,3 @@
             grid-area: image;
         }
     }
-}

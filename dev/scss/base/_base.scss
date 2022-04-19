@@ -1,3 +1,19 @@
 /* =============
     Base
 ============= */
+.cssgrid{
+    background-color: #C22523;
+    display:grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas:
+    "banner banner banner"
+    ". section1 ."
+    ". section2 .";
+    .section{
+        grid-area: section1;
+    }
+    .news{
+        grid-area: banner;
+        width: 100%;
+    }
+}
