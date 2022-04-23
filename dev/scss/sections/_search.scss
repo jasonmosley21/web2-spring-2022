@@ -1,9 +1,0 @@
-.search{
-  background-color: #C22523;  
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". search .";
-  div{
-      grid-area: search;
-  }
-}

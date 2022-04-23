@@ -1,7 +1,7 @@
-
-    #blck{
-        grid-area: section1;
+.hero{
+    background-color: red;
+    .stripe{
+        display: grid;
+        grid-template-columns: 40% auto;
     }
-    #gry{
-        grid-area: section2;
-    }
+}

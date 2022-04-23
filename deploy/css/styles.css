@@ -353,17 +353,22 @@ template {
     Base
 ============= */
 .cssgrid {
-  background-color: #C22523;
+  background-color: blue;
   display: grid;
   grid-template-columns: 16px auto 16px;
-  grid-template-areas: "banner banner banner" ". section1 ." ". section2 .";
+  grid-template-areas: "banner banner banner" ". section .";
 }
 .cssgrid .section {
-  grid-area: section1;
+  grid-area: section;
 }
 .cssgrid .news {
   grid-area: banner;
   width: 100%;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 /* =============
@@ -409,22 +414,12 @@ textarea {
   grid-template-columns: repeat(4, 1fr);
 }
 
-.search {
-  background-color: #C22523;
+.hero {
+  background-color: red;
+}
+.hero .stripe {
   display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". search .";
-}
-.search div {
-  grid-area: search;
-}
-
-#blck {
-  grid-area: section1;
-}
-
-#gry {
-  grid-area: section2;
+  grid-template-columns: 40% auto;
 }
 
 #left {
@@ -469,9 +464,4 @@ textarea {
 }
 .hero2 #image2 #hero3 {
   height: 486px;
-}
-
-ul {
-  list-style: none;
-  padding-left: 0;
 }
