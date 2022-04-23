@@ -371,6 +371,15 @@ ul {
   padding-left: 0;
 }
 
+.show-for-desktop {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .show-for-desktop {
+    display: block;
+  }
+}
+
 /* =============
     Typography
 ============= */
@@ -417,9 +426,22 @@ textarea {
 .hero {
   background-color: red;
 }
-.hero .stripe {
-  display: grid;
-  grid-template-columns: 40% auto;
+@media (min-width: 1024px) {
+  .hero {
+    background-color: pink;
+    grid-template-columns: auto 1440px auto;
+  }
+}
+@media (min-width: 768px) {
+  .hero .stripe {
+    display: grid;
+    grid-template-columns: 40% auto;
+  }
+}
+@media (min-width: 1024px) {
+  .hero .stripe {
+    grid-template-columns: 50% auto;
+  }
 }
 
 #left {

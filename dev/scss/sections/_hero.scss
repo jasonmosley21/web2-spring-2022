@@ -1,7 +1,18 @@
 .hero{
     background-color: red;
-    .stripe{
-        display: grid;
-        grid-template-columns: 40% auto;
+    
+
+    @include lg{
+        background-color: pink;
+        grid-template-columns: auto 1440px auto;
     }
+    .stripe{
+        @include md{
+            display: grid;
+            grid-template-columns: 40% auto;
+        }
+        @include lg{
+            grid-template-columns: 50% auto;
+        }
+        }
 }
