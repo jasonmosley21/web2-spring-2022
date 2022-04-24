@@ -374,7 +374,7 @@ ul {
 .show-for-desktop {
   display: none;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   .show-for-desktop {
     display: block;
   }
@@ -445,6 +445,9 @@ textarea {
   }
 }
 
+.floating img {
+  width: 100%;
+}
 @media (min-width: 1024px) {
   .floating {
     grid-template-columns: auto 990px auto;
@@ -480,20 +483,39 @@ textarea {
   grid-area: image;
 }
 
-.hero2 {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-areas: "image1" "image2";
+#hero2 img {
+  width: 100%;
 }
-.hero2 #image1 {
-  grid-area: image1;
-  height: 355px;
+#hero2 .section {
+  grid-area: section;
 }
-.hero2 #image2 {
-  display: grid;
-  grid-template-columns: 100% 0%;
-  grid-area: image2;
+@media (min-width: 768px) {
+  #hero2 .section {
+    display: grid;
+    grid-template-columns: 50% auto;
+  }
 }
-.hero2 #image2 #hero3 {
-  height: 486px;
+@media (min-width: 1440px) {
+  #hero2 .section {
+    display: grid;
+    grid-template-columns: 60% auto;
+  }
+  #hero2 .section aside {
+    display: grid;
+    grid-template-rows: 50% auto;
+  }
+}
+@media (min-width: 1024px) {
+  #hero2 {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". section .";
+  }
+}
+@media (min-width: 1440px) {
+  #hero2 {
+    display: grid;
+    grid-template-columns: 32px auto 32px;
+    grid-template-areas: ". section .";
+  }
 }

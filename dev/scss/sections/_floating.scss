@@ -1,5 +1,8 @@
 
     .floating{
+        img{
+            width: 100%;
+        }
         @include lg{
             grid-template-columns: auto 990px auto;
         }

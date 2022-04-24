@@ -22,7 +22,7 @@ ul{
 }
 .show-for-desktop{
     display: none;
-    @include lg{
+    @include xl{
         display: block;
     }
 }
