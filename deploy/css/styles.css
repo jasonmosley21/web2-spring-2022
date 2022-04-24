@@ -413,7 +413,7 @@ textarea {
 /* =============
     Footer
 ============= */
-.locations {
+.address {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -421,6 +421,43 @@ textarea {
 .social {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    grid-template-columns: auto 990px auto;
+  }
+}
+@media (min-width: 768px) {
+  .footer #footercontent {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "locations newsletter" ". social";
+  }
+  .footer #footercontent #locations {
+    grid-area: locations;
+  }
+  .footer #footercontent #newsletter {
+    grid-area: newsletter;
+  }
+  .footer #footercontent #follow {
+    grid-area: social;
+  }
+}
+@media (min-width: 1024px) {
+  .footer #footercontent {
+    display: grid;
+    grid-template-columns: 33% auto;
+    grid-template-areas: "locations newsletter";
+  }
+  .footer #footercontent #locations {
+    grid-area: locations;
+  }
+  .footer #footercontent #newsletter {
+    grid-area: newsletter;
+    display: grid;
+    grid-template-columns: 50% auto;
+  }
 }
 
 .hero {
@@ -517,5 +554,55 @@ textarea {
     display: grid;
     grid-template-columns: 32px auto 32px;
     grid-template-areas: ". section .";
+  }
+}
+
+@media (min-width: 768px) {
+  #news {
+    display: grid;
+    grid-template-columns: 16px auto auto auto auto 16px;
+    grid-template-areas: ". card1 card1 card2 card2 ." ". card3 card3 card4 card4 ." ". . card5 card5 . .";
+    column-gap: 16px;
+  }
+  #news #card1 {
+    grid-area: card1;
+  }
+  #news #card2 {
+    grid-area: card2;
+  }
+  #news #card3 {
+    grid-area: card3;
+  }
+  #news #card4 {
+    grid-area: card4;
+  }
+  #news #card5 {
+    grid-area: card5;
+  }
+}
+@media (min-width: 1024px) {
+  #news {
+    display: grid;
+    grid-template-columns: auto 160px 160px 160px 160px 160px 160px auto;
+    grid-template-areas: ". title . . . . . ." ". card1 card1 card2 card2 card3 card3 ." ". . card4 card4 card5 card5 . .";
+    column-gap: 16px;
+  }
+  #news #card1 {
+    grid-area: card1;
+  }
+  #news #card2 {
+    grid-area: card2;
+  }
+  #news #card3 {
+    grid-area: card3;
+  }
+  #news #card4 {
+    grid-area: card4;
+  }
+  #news #card5 {
+    grid-area: card5;
+  }
+  #news #title {
+    grid-area: title;
   }
 }

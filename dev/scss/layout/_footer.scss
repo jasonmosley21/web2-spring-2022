@@ -2,11 +2,49 @@
     Footer
 ============= */
 
-.locations{
+.address{
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }
 .social{
     display: grid;
     grid-template-columns: repeat(4,1fr);
+}
+
+.footer{
+    @include lg{
+        grid-template-columns: auto 990px auto;
+    }
+    #footercontent{
+    @include md{
+        display: grid;
+        grid-template-columns: 50% auto;
+        grid-template-areas: "locations newsletter"
+        ". social";
+        #locations{
+            grid-area: locations;
+        }
+        #newsletter{
+            grid-area: newsletter;
+        }
+        #follow{
+            grid-area: social;
+        }
+
+    }
+    @include lg{
+        display: grid;
+        grid-template-columns: 33% auto;
+        grid-template-areas: "locations newsletter";
+        #locations{
+            grid-area: locations;
+        }
+        #newsletter{
+            grid-area: newsletter;
+            display: grid;
+            grid-template-columns: 50% auto;
+        }
+
+    }
+}
 }
