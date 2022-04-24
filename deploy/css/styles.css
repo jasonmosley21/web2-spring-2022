@@ -429,13 +429,14 @@ textarea {
 @media (min-width: 1024px) {
   .hero {
     background-color: pink;
-    grid-template-columns: auto 1440px auto;
+    grid-template-columns: auto 990px auto;
   }
 }
 @media (min-width: 768px) {
   .hero .stripe {
     display: grid;
     grid-template-columns: 40% auto;
+    column-gap: 16px;
   }
 }
 @media (min-width: 1024px) {
@@ -444,29 +445,38 @@ textarea {
   }
 }
 
-#left {
-  grid-area: section1;
+@media (min-width: 1024px) {
+  .floating {
+    grid-template-columns: auto 990px auto;
+  }
+}
+@media (min-width: 768px) {
+  .floating > div {
+    display: grid;
+    grid-template-columns: 50% auto;
+    column-gap: 16px;
+  }
+}
+.floating #left {
   display: grid;
   grid-template-columns: 2, 1fr;
   grid-template-areas: " text image";
 }
-#left .text {
+.floating #left .text {
   grid-area: text;
 }
-#left .image {
+.floating #left .image {
   grid-area: image;
 }
-
-#right {
-  grid-area: section2;
+.floating #right {
   display: grid;
   grid-template-columns: 2, 1fr;
   grid-template-areas: " text image";
 }
-#right .text {
+.floating #right .text {
   grid-area: text;
 }
-#right .image {
+.floating #right .image {
   grid-area: image;
 }
 

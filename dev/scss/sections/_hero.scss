@@ -4,12 +4,13 @@
 
     @include lg{
         background-color: pink;
-        grid-template-columns: auto 1440px auto;
+        grid-template-columns: auto 990px auto;
     }
     .stripe{
         @include md{
             display: grid;
             grid-template-columns: 40% auto;
+            column-gap: 16px;
         }
         @include lg{
             grid-template-columns: 50% auto;

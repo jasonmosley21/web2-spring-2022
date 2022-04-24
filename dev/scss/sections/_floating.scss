@@ -1,6 +1,17 @@
 
-    #left{
-        grid-area: section1;
+    .floating{
+        @include lg{
+            grid-template-columns: auto 990px auto;
+        }
+        >div{
+            @include md{
+            //background-color:yellow;
+            display: grid;
+            grid-template-columns: 50% auto;
+            column-gap: 16px;
+        }
+    }
+        #left{
         display: grid;
         grid-template-columns: (2,1fr);
         grid-template-areas: " text image";
@@ -12,7 +23,6 @@
         }
     }
     #right{
-        grid-area: section2;
         display: grid;
         grid-template-columns: (2,1fr);
         grid-template-areas: " text image";
@@ -23,3 +33,4 @@
             grid-area: image;
         }
     }
+}
