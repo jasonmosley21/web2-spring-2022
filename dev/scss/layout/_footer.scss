@@ -12,6 +12,7 @@
 }
 
 .footer{
+    background-color: #C22523;
     @include lg{
         grid-template-columns: auto 990px auto;
     }

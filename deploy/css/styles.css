@@ -353,7 +353,6 @@ template {
     Base
 ============= */
 .cssgrid {
-  background-color: blue;
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: "banner banner banner" ". section .";
@@ -410,6 +409,13 @@ textarea {
 /* =============
     Header
 ============= */
+#header {
+  background-color: #C22523;
+}
+#header section img {
+  height: 35px;
+}
+
 /* =============
     Footer
 ============= */
@@ -423,6 +429,9 @@ textarea {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.footer {
+  background-color: #C22523;
+}
 @media (min-width: 1024px) {
   .footer {
     grid-template-columns: auto 990px auto;
@@ -460,8 +469,12 @@ textarea {
   }
 }
 
+#search {
+  background-color: white;
+}
+
 .hero {
-  background-color: red;
+  background-color: #66636A;
 }
 @media (min-width: 1024px) {
   .hero {
@@ -482,6 +495,9 @@ textarea {
   }
 }
 
+.floating {
+  background-color: #FFD507;
+}
 .floating img {
   width: 100%;
 }
@@ -557,27 +573,36 @@ textarea {
   }
 }
 
+#news #card1 {
+  grid-area: card1;
+  background-color: #FFD507;
+}
+#news #card2 {
+  grid-area: card2;
+  background-color: #FFD507;
+}
+#news #card3 {
+  grid-area: card3;
+  background-color: #FFD507;
+}
+#news #card4 {
+  grid-area: card4;
+  background-color: #FFD507;
+}
+#news #card5 {
+  grid-area: card5;
+  background-color: #FFD507;
+}
+#news #title {
+  grid-area: title;
+}
 @media (min-width: 768px) {
   #news {
     display: grid;
     grid-template-columns: 16px auto auto auto auto 16px;
-    grid-template-areas: ". card1 card1 card2 card2 ." ". card3 card3 card4 card4 ." ". . card5 card5 . .";
+    grid-template-areas: "title . . . . ." ". card1 card1 card2 card2 ." ". card3 card3 card4 card4 ." ". . card5 card5 . .";
     column-gap: 16px;
-  }
-  #news #card1 {
-    grid-area: card1;
-  }
-  #news #card2 {
-    grid-area: card2;
-  }
-  #news #card3 {
-    grid-area: card3;
-  }
-  #news #card4 {
-    grid-area: card4;
-  }
-  #news #card5 {
-    grid-area: card5;
+    row-gap: 16px;
   }
 }
 @media (min-width: 1024px) {
@@ -586,23 +611,6 @@ textarea {
     grid-template-columns: auto 160px 160px 160px 160px 160px 160px auto;
     grid-template-areas: ". title . . . . . ." ". card1 card1 card2 card2 card3 card3 ." ". . card4 card4 card5 card5 . .";
     column-gap: 16px;
-  }
-  #news #card1 {
-    grid-area: card1;
-  }
-  #news #card2 {
-    grid-area: card2;
-  }
-  #news #card3 {
-    grid-area: card3;
-  }
-  #news #card4 {
-    grid-area: card4;
-  }
-  #news #card5 {
-    grid-area: card5;
-  }
-  #news #title {
-    grid-area: title;
+    row-gap: 16px;
   }
 }
