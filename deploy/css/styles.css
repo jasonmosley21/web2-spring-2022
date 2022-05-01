@@ -370,11 +370,20 @@ ul {
   padding-left: 0;
 }
 
-.show-for-desktop {
+.show-for-xl {
   display: none;
 }
 @media (min-width: 1440px) {
-  .show-for-desktop {
+  .show-for-xl {
+    display: block;
+  }
+}
+
+.show-for-lg {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .show-for-lg {
     display: block;
   }
 }
@@ -473,67 +482,96 @@ textarea {
   background-color: white;
 }
 
-.hero {
+.hero #hero {
+  width: 100%;
+}
+
+.stripe #heroleft {
+  background-color: #2d2c30;
+}
+@media (min-width: 1024px) {
+  .stripe #heroleft {
+    grid-template-columns: auto 495px 16px;
+  }
+}
+.stripe #heroright {
   background-color: #66636A;
 }
 @media (min-width: 1024px) {
-  .hero {
-    background-color: pink;
-    grid-template-columns: auto 990px auto;
+  .stripe #heroright {
+    grid-template-columns: 16px 495px auto;
   }
 }
 @media (min-width: 768px) {
-  .hero .stripe {
+  .stripe {
     display: grid;
     grid-template-columns: 40% auto;
-    column-gap: 16px;
   }
 }
 @media (min-width: 1024px) {
-  .hero .stripe {
+  .stripe {
     grid-template-columns: 50% auto;
   }
 }
 
 .floating {
-  background-color: #FFD507;
+  display: grid;
 }
 .floating img {
   width: 100%;
 }
-@media (min-width: 1024px) {
-  .floating {
-    grid-template-columns: auto 990px auto;
-  }
+.floating > div {
+  grid-area: cards;
 }
 @media (min-width: 768px) {
   .floating > div {
     display: grid;
     grid-template-columns: 50% auto;
+    grid-template-areas: "left right";
     column-gap: 16px;
   }
 }
 .floating #left {
-  display: grid;
-  grid-template-columns: 2, 1fr;
-  grid-template-areas: " text image";
+  background-color: #FFD507;
+  grid-area: left;
 }
-.floating #left .text {
+.floating #left article {
+  display: grid;
+  grid-template-columns: 50% auto;
+  grid-template-areas: "text image";
+}
+.floating #left article .text {
   grid-area: text;
 }
-.floating #left .image {
+.floating #left article .image {
   grid-area: image;
 }
 .floating #right {
-  display: grid;
-  grid-template-columns: 2, 1fr;
-  grid-template-areas: " text image";
+  grid-area: right;
+  background-color: #FFD507;
 }
-.floating #right .text {
+.floating #right article {
+  display: grid;
+  grid-template-columns: 50% auto;
+  grid-template-areas: "text image";
+}
+.floating #right article .text {
   grid-area: text;
 }
-.floating #right .image {
+.floating #right article .image {
   grid-area: image;
+}
+@media (min-width: 768px) {
+  .floating {
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". cards .";
+  }
+}
+@media (min-width: 1024px) {
+  .floating {
+    grid-template-columns: auto 990px auto;
+    grid-template-areas: ". cards .";
+  }
 }
 
 #hero2 img {
@@ -548,7 +586,7 @@ textarea {
     grid-template-columns: 50% auto;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
   #hero2 .section {
     display: grid;
     grid-template-columns: 60% auto;
@@ -595,6 +633,11 @@ textarea {
 }
 #news #title {
   grid-area: title;
+}
+@media (min-width: 1024px) {
+  #news #title {
+    grid-template-areas: "section . .";
+  }
 }
 @media (min-width: 768px) {
   #news {

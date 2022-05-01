@@ -21,6 +21,9 @@
     }
     #title{
         grid-area: title;
+        @include lg{
+            grid-template-areas: "section . .";
+        }
     }
     @include md{
         display: grid;

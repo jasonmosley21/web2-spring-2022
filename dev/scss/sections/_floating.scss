@@ -1,40 +1,54 @@
 
     .floating{
-        background-color: #FFD507;
+        display: grid;
         img{
             width: 100%;
         }
-        @include lg{
-            grid-template-columns: auto 990px auto;
-        }
         >div{
+            grid-area: cards;
             @include md{
-            //background-color:yellow;
-            display: grid;
-            grid-template-columns: 50% auto;
-            column-gap: 16px;
+                display: grid;
+                grid-template-columns: 50% auto;
+                grid-template-areas: "left right";
+                column-gap: 16px;
+            }
         }
-    }
         #left{
-        display: grid;
-        grid-template-columns: (2,1fr);
-        grid-template-areas: " text image";
-        .text{
-            grid-area: text;
+            background-color: #FFD507;
+            grid-area: left;
+            article{
+                display: grid;
+                grid-template-columns: 50% auto;
+                grid-template-areas: "text image";
+                .text{
+                    grid-area: text;
+                }
+                .image{
+                    grid-area: image;
+                }
+            }
         }
-        .image{
-            grid-area: image;
+        #right{
+            grid-area: right;
+            background-color: #FFD507;
+            article{
+                display: grid;
+                grid-template-columns: 50% auto;
+                grid-template-areas: "text image";
+                .text{
+                    grid-area: text;
+                }
+                .image{
+                    grid-area: image;
+                }
+            }
         }
-    }
-    #right{
-        display: grid;
-        grid-template-columns: (2,1fr);
-        grid-template-areas: " text image";
-        .text{
-            grid-area: text;
+        @include md{
+            grid-template-columns: 16px auto 16px;
+            grid-template-areas: ". cards .";
         }
-        .image{
-            grid-area: image;
-        }
-    }
+        @include lg{
+                grid-template-columns: auto 990px auto;
+                grid-template-areas: ". cards .";
+            }
 }

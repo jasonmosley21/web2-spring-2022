@@ -1,17 +1,27 @@
 .hero{
-    background-color: #66636A;
-    @include lg{
-        background-color: pink;
-        grid-template-columns: auto 990px auto;
+    #hero{
+        width: 100%;
+    }
+    
     }
     .stripe{
+        #heroleft{
+            background-color: #2d2c30;
+            @include lg{
+                grid-template-columns: auto 495px 16px;
+            }
+        }
+        #heroright{
+            background-color: #66636A;
+            @include lg{
+                grid-template-columns: 16px 495px auto;
+            }
+        }
         @include md{
             display: grid;
             grid-template-columns: 40% auto;
-            column-gap: 16px;
         }
         @include lg{
             grid-template-columns: 50% auto;
         }
     }
-}

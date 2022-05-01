@@ -20,9 +20,15 @@ ul{
     list-style: none;
     padding-left: 0;
 }
-.show-for-desktop{
+.show-for-xl{
     display: none;
     @include xl{
+        display: block;
+    }
+}
+.show-for-lg{
+    display: none;
+    @include lg{
         display: block;
     }
 }

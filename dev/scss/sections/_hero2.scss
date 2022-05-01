@@ -5,10 +5,10 @@
     .section{
         grid-area: section;
         @include md{
-        display: grid;
-    grid-template-columns: 50% auto;
+            display: grid;
+            grid-template-columns: 50% auto;
     }
-    @include xl{
+    @include lg{
         display: grid;
     grid-template-columns: 60% auto;
      aside{
