@@ -442,6 +442,18 @@ textarea {
 }
 #header section img {
   height: 35px;
+  margin: 16px 0;
+}
+@media (min-width: 768px) {
+  #header section img {
+    height: 45px;
+    margin: 24px 0;
+  }
+}
+@media (min-width: 1024px) {
+  #header section img {
+    height: 55px;
+  }
 }
 
 /* =============

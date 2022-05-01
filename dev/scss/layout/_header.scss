@@ -6,6 +6,14 @@
     section{
         img{
             height: 35px;
+            margin: 16px 0;
+            @include md{
+                height: 45px;
+                margin: 24px 0;
+            }
+            @include lg{
+                height: 55px;
+            }
         }
     }
 }
