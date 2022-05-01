@@ -1,6 +1,17 @@
 
     .floating{
         display: grid;
+        h1{
+            font-weight: 400;
+            font-size: 24px;
+        }
+        h2{
+            font-weight: 600;
+            font-size: 16px;
+        }
+        button{
+            padding: 8px;
+        }
         img{
             width: 100%;
         }
@@ -23,6 +34,7 @@
                 grid-template-areas: "text image";
                 .text{
                     grid-area: text;
+                    margin-top: 16px;
                 }
                 .image{
                     grid-area: image;
@@ -38,6 +50,7 @@
                 grid-template-areas: "text image";
                 .text{
                     grid-area: text;
+                    margin-top: 32px;
                 }
                 .image{
                     grid-area: image;

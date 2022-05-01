@@ -13,22 +13,45 @@
 
 .footer{
     background-color: #C22523;
+    h2{
+        margin-bottom: 16px;
+        font-weight: 600;
+        font-size: rem-calc(24);
+    }
+    h3{
+        font-weight: 600;
+        font-size: rem-calc(16);
+        margin-bottom: 16px;
+    }
+    p{
+        font-weight: 400;
+        font-size: rem-calc(16);
+        margin-bottom: 16px;
+    }
+    #locations{
+        grid-area: locations;
+        margin-bottom: 24px;
+    }
+    #newsletter{
+        grid-area: newsletter;
+        >div{
+            margin-bottom: 56px;
+            h2{
+                margin-bottom: 24px;
+            }
+        }
+    }
     @include lg{
         grid-template-columns: auto 990px auto;
     }
     #footercontent{
+        margin-top: 24px;
     @include md{
         display: grid;
         grid-template-columns: 50% auto;
         grid-template-areas: "locations newsletter"
         ". social";
-        margin: 16px 0 40px; 
-        #locations{
-            grid-area: locations;
-        }
-        #newsletter{
-            grid-area: newsletter;
-        }
+        margin: 16px 0 40px;
         #follow{
             grid-area: social;
         }

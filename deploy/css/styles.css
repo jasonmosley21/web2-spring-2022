@@ -486,10 +486,41 @@ textarea {
 .footer {
   background-color: #C22523;
 }
+.footer h2 {
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.footer h3 {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 16px;
+}
+.footer p {
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 16px;
+}
+.footer #locations {
+  grid-area: locations;
+  margin-bottom: 24px;
+}
+.footer #newsletter {
+  grid-area: newsletter;
+}
+.footer #newsletter > div {
+  margin-bottom: 56px;
+}
+.footer #newsletter > div h2 {
+  margin-bottom: 24px;
+}
 @media (min-width: 1024px) {
   .footer {
     grid-template-columns: auto 990px auto;
   }
+}
+.footer #footercontent {
+  margin-top: 24px;
 }
 @media (min-width: 768px) {
   .footer #footercontent {
@@ -497,12 +528,6 @@ textarea {
     grid-template-columns: 50% auto;
     grid-template-areas: "locations newsletter" ". social";
     margin: 16px 0 40px;
-  }
-  .footer #footercontent #locations {
-    grid-area: locations;
-  }
-  .footer #footercontent #newsletter {
-    grid-area: newsletter;
   }
   .footer #footercontent #follow {
     grid-area: social;
@@ -549,6 +574,22 @@ textarea {
 .stripe #heroleft {
   background-color: #2d2c30;
 }
+.stripe #heroleft > div {
+  margin: 16px 0;
+}
+.stripe #heroleft > div h2 {
+  font-weight: 700;
+  font-size: 1rem;
+}
+@media (min-width: 1024px) {
+  .stripe #heroleft > div h2 {
+    font-size: 1.5rem;
+  }
+}
+.stripe #heroleft > div h3 {
+  font-weight: 600;
+  font-size: 1rem;
+}
 @media (min-width: 1024px) {
   .stripe #heroleft {
     grid-template-columns: auto 463px 16px;
@@ -556,6 +597,17 @@ textarea {
 }
 .stripe #heroright {
   background-color: #66636A;
+}
+.stripe #heroright > div {
+  margin: 16px 0 48px 0;
+}
+.stripe #heroright > div h3 {
+  font-weight: 600;
+  font-size: 1rem;
+}
+.stripe #heroright > div h4 {
+  font-weight: 400;
+  font-size: 1rem;
 }
 @media (min-width: 1024px) {
   .stripe #heroright {
@@ -576,6 +628,17 @@ textarea {
 
 .floating {
   display: grid;
+}
+.floating h1 {
+  font-weight: 400;
+  font-size: 24px;
+}
+.floating h2 {
+  font-weight: 600;
+  font-size: 16px;
+}
+.floating button {
+  padding: 8px;
 }
 .floating img {
   width: 100%;
@@ -603,6 +666,7 @@ textarea {
 }
 .floating #left article .text {
   grid-area: text;
+  margin-top: 16px;
 }
 .floating #left article .image {
   grid-area: image;
@@ -618,6 +682,7 @@ textarea {
 }
 .floating #right article .text {
   grid-area: text;
+  margin-top: 32px;
 }
 .floating #right article .image {
   grid-area: image;
@@ -672,6 +737,26 @@ textarea {
   }
 }
 
+#news h1 {
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+#news h2 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-top: 16px;
+}
+#news p {
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 16px;
+}
+#news button {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
 #news #card1 {
   grid-area: card1;
   background-color: #FFD507;
