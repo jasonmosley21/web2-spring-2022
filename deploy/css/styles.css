@@ -659,22 +659,27 @@ textarea {
 #news #card1 {
   grid-area: card1;
   background-color: #FFD507;
+  margin-top: 16px;
 }
 #news #card2 {
   grid-area: card2;
   background-color: #FFD507;
+  margin-top: 16px;
 }
 #news #card3 {
   grid-area: card3;
   background-color: #FFD507;
+  margin-top: 16px;
 }
 #news #card4 {
   grid-area: card4;
   background-color: #FFD507;
+  margin-top: 16px;
 }
 #news #card5 {
   grid-area: card5;
   background-color: #FFD507;
+  margin-top: 16px;
 }
 #news #title {
   grid-area: title;
@@ -690,7 +695,6 @@ textarea {
     grid-template-columns: 16px auto auto auto auto 16px;
     grid-template-areas: "title . . . . ." ". card1 card1 card2 card2 ." ". card3 card3 card4 card4 ." ". . card5 card5 . .";
     column-gap: 16px;
-    row-gap: 16px;
   }
 }
 @media (min-width: 1024px) {
