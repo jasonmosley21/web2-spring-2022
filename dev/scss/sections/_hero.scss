@@ -8,13 +8,13 @@
         #heroleft{
             background-color: #2d2c30;
             @include lg{
-                grid-template-columns: auto 495px 16px;
+                grid-template-columns: auto 463px 16px;
             }
         }
         #heroright{
             background-color: #66636A;
             @include lg{
-                grid-template-columns: 16px 495px auto;
+                grid-template-columns: 16px 463px auto;
             }
         }
         @include md{

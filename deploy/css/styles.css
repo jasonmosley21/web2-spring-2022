@@ -391,6 +391,21 @@ ul {
 .spacing {
   margin-top: 16px;
 }
+@media (min-width: 768px) {
+  .spacing {
+    margin-top: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  .spacing {
+    margin-top: 48px;
+  }
+}
+@media (min-width: 1440px) {
+  .spacing {
+    margin-top: 56px;
+  }
+}
 
 /* =============
     Typography
@@ -495,7 +510,7 @@ textarea {
 }
 @media (min-width: 1024px) {
   .stripe #heroleft {
-    grid-template-columns: auto 495px 16px;
+    grid-template-columns: auto 463px 16px;
   }
 }
 .stripe #heroright {
@@ -503,7 +518,7 @@ textarea {
 }
 @media (min-width: 1024px) {
   .stripe #heroright {
-    grid-template-columns: 16px 495px auto;
+    grid-template-columns: 16px 463px auto;
   }
 }
 @media (min-width: 768px) {

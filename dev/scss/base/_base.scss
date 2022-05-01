@@ -34,4 +34,14 @@ ul{
 }
 .spacing{
     margin-top: 16px;
+    @include md{
+        margin-top: 24px;
+    }
+    @include lg{
+        margin-top: 48px;
+    }
+    @include xl{
+        margin-top: 56px;
+    }
+
 }
