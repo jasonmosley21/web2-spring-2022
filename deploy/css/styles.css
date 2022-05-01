@@ -512,6 +512,19 @@ textarea {
 #search {
   background-color: white;
 }
+#search > div {
+  margin: 16px 0;
+}
+@media (min-width: 768px) {
+  #search > div {
+    margin: 16px 0 24px;
+  }
+}
+@media (min-width: 1024px) {
+  #search > div {
+    margin: 24px 0;
+  }
+}
 
 .hero #hero {
   width: 100%;
