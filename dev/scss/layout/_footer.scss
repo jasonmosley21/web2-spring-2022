@@ -22,6 +22,7 @@
         grid-template-columns: 50% auto;
         grid-template-areas: "locations newsletter"
         ". social";
+        margin: 16px 0 40px; 
         #locations{
             grid-area: locations;
         }
@@ -37,6 +38,7 @@
         display: grid;
         grid-template-columns: 33% auto;
         grid-template-areas: "locations newsletter";
+        margin: 36px 0 48px;
         #locations{
             grid-area: locations;
         }

@@ -410,6 +410,20 @@ ul {
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
 /* =============
     Buttons
 ============= */
@@ -482,6 +496,7 @@ textarea {
     display: grid;
     grid-template-columns: 50% auto;
     grid-template-areas: "locations newsletter" ". social";
+    margin: 16px 0 40px;
   }
   .footer #footercontent #locations {
     grid-area: locations;
@@ -498,6 +513,7 @@ textarea {
     display: grid;
     grid-template-columns: 33% auto;
     grid-template-areas: "locations newsletter";
+    margin: 36px 0 48px;
   }
   .footer #footercontent #locations {
     grid-area: locations;
