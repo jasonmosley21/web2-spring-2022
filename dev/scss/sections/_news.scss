@@ -7,17 +7,27 @@
         font-weight: 600;
         font-size: rem-calc(24);
         margin-top: 16px;
+        @include md{
+            margin-top: 24px;
+        }
     }
     p{
         font-weight: 400;
         font-size: rem-calc(16);
         margin-top: 16px;
+        @include md{
+            margin-top: 24px;
+        }
     }
     button{
         font-weight: 600;
         font-size: rem-calc(16);
         margin-bottom: 16px;
         margin-top: 16px;
+        @include md{
+            margin-top: 48px;
+            margin-top: 24px;
+        }
     }
     #card1{
         grid-area: card1;
@@ -50,6 +60,7 @@
             grid-template-areas: "section . .";
         }
     }
+    
     @include md{
         display: grid;
     grid-template-columns: 16px auto auto auto auto 16px;

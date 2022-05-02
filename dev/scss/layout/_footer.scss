@@ -17,11 +17,17 @@
         margin-bottom: 16px;
         font-weight: 600;
         font-size: rem-calc(24);
+        @include md{
+            margin-bottom: 24px;
+        }
     }
     h3{
         font-weight: 600;
         font-size: rem-calc(16);
         margin-bottom: 16px;
+        @include md{
+            margin-bottom: 24px;
+        }
     }
     p{
         font-weight: 400;
@@ -36,8 +42,21 @@
         grid-area: newsletter;
         >div{
             margin-bottom: 56px;
+            @include md{
+                margin-bottom: 80px;
+            }
             h2{
                 margin-bottom: 24px;
+                @include lg{
+                    text-align: center;
+                }
+            }
+        }
+        section{
+            h2{
+                @include lg{
+                    text-align: right;
+                }
             }
         }
     }
@@ -52,6 +71,7 @@
         grid-template-areas: "locations newsletter"
         ". social";
         margin: 16px 0 40px;
+        column-gap: 16px;
         #follow{
             grid-area: social;
         }
