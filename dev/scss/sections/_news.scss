@@ -24,6 +24,10 @@
         font-size: rem-calc(16);
         margin-bottom: 16px;
         margin-top: 16px;
+        padding: 8px 16px;
+        color: var(--white);
+        background-color: var(--black);
+        border: none;
         @include md{
             margin-top: 48px;
             margin-top: 24px;
@@ -33,26 +37,41 @@
         grid-area: card1;
         background-color: #FFD507;
         margin-top: 16px;
+        grid-template-areas:
+    "banner banner banner"
+    ". section .";
     }
     #card2{
         grid-area: card2;
         background-color: #FFD507;
         margin-top: 16px;
+        grid-template-areas:
+    "banner banner banner"
+    ". section .";
     }
     #card3{
         grid-area: card3;
         background-color: #FFD507;
         margin-top: 16px;
+        grid-template-areas:
+    "banner banner banner"
+    ". section .";
     }
     #card4{
         grid-area: card4;
         background-color: #FFD507;
         margin-top: 16px;
+        grid-template-areas:
+    "banner banner banner"
+    ". section .";
     }
     #card5{
         grid-area: card5;
         background-color: #FFD507;
         margin-top: 16px;
+        grid-template-areas:
+    "banner banner banner"
+    ". section .";
     }
     #title{
         grid-area: title;
@@ -82,6 +101,12 @@
     column-gap: 16px;
     row-gap: 16px;
 
+    }
+    li{
+        img{
+            grid-area: banner;
+            width: 100%;
+        }
     }
 }
 

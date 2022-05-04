@@ -5,21 +5,40 @@
     
     }
     .stripe{
+        button{
+            background-color: transparent;
+            border: none;
+            display: flex;
+            align-items: center;
+            color: var(--white);
+            img{
+                margin-left: 8px;
+            }
+        }
         #heroleft{
             background-color: #2b292e;
             
             >div{
                 margin: 16px 0 48px 0;
-                @include md{
-                    margin: 16px 0 8px 0;
-                }
+                display: flex;
+                align-items: center;
                 h1{
                     font-weight: 700;
                     font-size: rem-calc(16);
+                    color: var(--white);
                 }
                 h2{
                     font-weight: 600;
                     font-size: rem-calc(16);
+                    color: var(--white);
+                }
+                h4{
+                    font-weight: 700;
+                    font-size: rem-calc(16);
+                    color: var(--white);
+                }
+                @include md{
+                    margin: 16px 0 8px 0;
                 }
                 
             }
@@ -32,16 +51,25 @@
             
             >div{
                 margin: 16px 0 48px 0;
-                @include md{
-                    margin: 24px 0 24px;
-                }
+                display: flex;
+                align-items: center;
                 h3{
                     font-weight: 600;
                     font-size: rem-calc(16);
+                    color: var(--white);
                 }
-                h4{
+                h3{
                     font-weight: 400;
                     font-size: rem-calc(16);
+                    color: var(--white);
+                    span{
+                        font-weight: 600;
+                        font-size: rem-calc(16);
+                        color: var(--white);
+                    }
+                }
+                @include md{
+                    margin: 24px 0 24px;
                 }
                 
             }

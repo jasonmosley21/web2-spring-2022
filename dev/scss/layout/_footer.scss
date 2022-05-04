@@ -4,11 +4,17 @@
 
 .address{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 10% auto;
+    img{
+        margin-right: 16px;
+    }
 }
 .social{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
+    display: flex;
+    column-gap: 16px;
+    @include lg{
+        justify-content: flex-end;
+    }
 }
 
 .footer{
@@ -34,6 +40,9 @@
         font-size: rem-calc(16);
         margin-bottom: 16px;
     }
+    hr{
+        border-color: var(--black);
+    }
     #locations{
         grid-area: locations;
         margin-bottom: 24px;
@@ -42,6 +51,20 @@
         grid-area: newsletter;
         >div{
             margin-bottom: 56px;
+            input{
+                border: none;
+                background-color: var(--white);
+                width: 100%;
+                box-sizing: border-box;
+                padding: 16px;
+                margin-bottom: 16px;
+            }
+            button{
+                padding: 8px 16px;
+                border: none;
+                background-color: var(--black);
+                color: var(--white);
+            }
             @include md{
                 margin-bottom: 80px;
             }

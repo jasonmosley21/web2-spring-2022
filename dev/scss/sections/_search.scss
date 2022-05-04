@@ -1,7 +1,21 @@
 #search{
-    background-color: white;
+    background-color: var(--white);
     >div{
+        display: flex;
         margin: 16px 0;
+        input{
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 1px solid var(--black);
+            width: 100%;
+        }
+        button{
+            padding: 8px;
+            margin-left: 8px;
+            border: none;
+            border-radius: 3.5px;
+            background-color: var(--gray);
+        }
         @include md{
             margin: 16px 0 24px;
         }

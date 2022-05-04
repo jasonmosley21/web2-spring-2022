@@ -6,7 +6,7 @@
     display:grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas:
-    "banner banner banner"
+    //"banner banner banner"
     ". section .";
     .section{
         grid-area: section;
