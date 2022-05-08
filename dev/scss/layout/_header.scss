@@ -5,14 +5,14 @@
     background-color: var(--red);
     section{
         img{
-            height: 35px;
+            width: 120px;
             margin: 16px 0;
             @include md{
-                height: 45px;
-                margin: 24px 0;
+                width: 152px;
+                margin: 16px 0;
             }
             @include lg{
-                height: 55px;
+                width: 184px;
             }
         }
     }

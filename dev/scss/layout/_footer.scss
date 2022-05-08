@@ -23,6 +23,7 @@
         margin-bottom: 16px;
         font-weight: 600;
         font-size: rem-calc(24);
+        color: var(--white);
         @include md{
             margin-bottom: 24px;
         }
@@ -31,21 +32,32 @@
         font-weight: 600;
         font-size: rem-calc(16);
         margin-bottom: 16px;
+        color: var(--white);
         @include md{
             margin-bottom: 24px;
         }
+    }
+    address{
+        font-weight: 400;
+        font-size: rem-calc(16);
+        margin-bottom: 16px;
+        color: var(--white);
     }
     p{
         font-weight: 400;
         font-size: rem-calc(16);
         margin-bottom: 16px;
+        color: var(--white);
     }
     hr{
-        border-color: var(--black);
+        border-color: var(--white);
     }
     #locations{
         grid-area: locations;
         margin-bottom: 24px;
+        img{
+            width: 24px;
+        }
     }
     #newsletter{
         grid-area: newsletter;
