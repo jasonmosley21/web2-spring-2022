@@ -19,7 +19,7 @@
             border: none;
         }
         img{
-            width: 100%;
+           width: 100%;
         }
         >div{
             grid-area: cards;
@@ -35,38 +35,16 @@
             grid-area: left;
             margin-bottom: 16px;
             article{
-                display: grid;
-                grid-template-columns: 50% auto;
-                grid-template-areas: "text image";
-                .text{
-                    grid-area: text;
-                    margin-top: 16px;
-                    @include md{
-                        margin: 24px 0 24px 0;
-                    }
-                }
-                .image{
-                    grid-area: image;
-                }
+                display: flex;
+                justify-content: space-between;
             }
         }
         #right{
             grid-area: right;
             background-color: #FFD507;
             article{
-                display: grid;
-                grid-template-columns: 50% auto;
-                grid-template-areas: "text image";
-                .text{
-                    grid-area: text;
-                    margin: 32px 0 24px 0;
-                    @include md{
-                        margin: 48px 0 40px 0
-                    }
-                }
-                .image{
-                    grid-area: image;
-                }
+                display: flex;
+                justify-content: space-between;
             }
         }
         @include md{

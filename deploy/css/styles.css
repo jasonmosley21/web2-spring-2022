@@ -700,6 +700,7 @@ textarea {
   margin: 16px 0 48px 0;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .stripe #heroleft > div h1 {
   font-weight: 700;
@@ -733,6 +734,7 @@ textarea {
   margin: 16px 0 48px 0;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .stripe #heroright > div h3 {
   font-weight: 400;
@@ -808,42 +810,16 @@ textarea {
   margin-bottom: 16px;
 }
 .floating #left article {
-  display: grid;
-  grid-template-columns: 50% auto;
-  grid-template-areas: "text image";
-}
-.floating #left article .text {
-  grid-area: text;
-  margin-top: 16px;
-}
-@media (min-width: 768px) {
-  .floating #left article .text {
-    margin: 24px 0 24px 0;
-  }
-}
-.floating #left article .image {
-  grid-area: image;
+  display: flex;
+  justify-content: space-between;
 }
 .floating #right {
   grid-area: right;
   background-color: #FFD507;
 }
 .floating #right article {
-  display: grid;
-  grid-template-columns: 50% auto;
-  grid-template-areas: "text image";
-}
-.floating #right article .text {
-  grid-area: text;
-  margin: 32px 0 24px 0;
-}
-@media (min-width: 768px) {
-  .floating #right article .text {
-    margin: 48px 0 40px 0;
-  }
-}
-.floating #right article .image {
-  grid-area: image;
+  display: flex;
+  justify-content: space-between;
 }
 @media (min-width: 768px) {
   .floating {
