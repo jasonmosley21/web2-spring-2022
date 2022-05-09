@@ -37,6 +37,19 @@
             article{
                 display: flex;
                 justify-content: space-between;
+                aside{
+                    background-image: url('../img/pegasus.jpeg');
+                    height: 81px;
+                    width: 81px;
+                    background-position: center;
+                    background-size: cover;
+                    border: 4px solid var(--black);
+                    border-radius: 100%;
+                    @include md{
+                        height: 106px;
+                        width: 106px;
+                    }
+                }
             }
         }
         #right{
@@ -45,6 +58,19 @@
             article{
                 display: flex;
                 justify-content: space-between;
+                aside{
+                    background-image: url('../img/parts.jpg');
+                    height: 81px;
+                    width: 81px;
+                    background-position: center;
+                    background-size: cover;
+                    border: 4px solid var(--black);
+                    border-radius: 100%;
+                    @include md{
+                        height: 106px;
+                        width: 106px;
+                    }
+                }
             }
         }
         @include md{

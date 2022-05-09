@@ -33,6 +33,17 @@
             margin-top: 24px;
         }
     }
+    article{
+        height: 164px;
+        background-position: center;
+            background-size: cover;
+        @include md{
+            height: 184px;
+        }
+        @include lg{
+            height: 164px;
+        }
+    }
     #card1{
         grid-area: card1;
         background-color: #FFD507;
@@ -40,6 +51,10 @@
         grid-template-areas:
     "banner banner banner"
     ". section .";
+        article{
+            background-image: url('../img/gingka.jpg');
+            
+        }
     }
     #card2{
         grid-area: card2;
@@ -48,6 +63,10 @@
         grid-template-areas:
     "banner banner banner"
     ". section .";
+    article{
+        background-image: url('../img/kyoya.jpg');
+        
+    }
     }
     #card3{
         grid-area: card3;
@@ -56,6 +75,10 @@
         grid-template-areas:
     "banner banner banner"
     ". section .";
+    article{
+        background-image: url('../img/ryuga2.jpg');
+        
+    }
     }
     #card4{
         grid-area: card4;
@@ -64,6 +87,10 @@
         grid-template-areas:
     "banner banner banner"
     ". section .";
+    article{
+        background-image: url('../img/max.jpg');
+        
+    }
     }
     #card5{
         grid-area: card5;
@@ -72,6 +99,10 @@
         grid-template-areas:
     "banner banner banner"
     ". section .";
+    article{
+        background-image: url('../img/evildude.jpg');
+        
+    }
     }
     #title{
         grid-area: title;
@@ -103,7 +134,7 @@
 
     }
     li{
-        img{
+        article{
             grid-area: banner;
             width: 100%;
         }

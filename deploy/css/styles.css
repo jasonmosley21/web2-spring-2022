@@ -674,8 +674,27 @@ textarea {
   }
 }
 
-.hero #hero {
-  width: 100%;
+.hero #heroimg {
+  background-image: url("../img/beybladebanner.jpg");
+  background-size: cover;
+  height: 27vh;
+  width: 100vw;
+  background-position: center;
+}
+@media (min-width: 768px) {
+  .hero #heroimg {
+    height: 40vh;
+  }
+}
+@media (min-width: 1024px) {
+  .hero #heroimg {
+    height: 75vh;
+  }
+}
+@media (min-width: 1440px) {
+  .hero #heroimg {
+    height: 85vh;
+  }
 }
 
 .stripe button {
@@ -813,6 +832,21 @@ textarea {
   display: flex;
   justify-content: space-between;
 }
+.floating #left article aside {
+  background-image: url("../img/pegasus.jpeg");
+  height: 81px;
+  width: 81px;
+  background-position: center;
+  background-size: cover;
+  border: 4px solid var(--black);
+  border-radius: 100%;
+}
+@media (min-width: 768px) {
+  .floating #left article aside {
+    height: 106px;
+    width: 106px;
+  }
+}
 .floating #right {
   grid-area: right;
   background-color: #FFD507;
@@ -820,6 +854,21 @@ textarea {
 .floating #right article {
   display: flex;
   justify-content: space-between;
+}
+.floating #right article aside {
+  background-image: url("../img/parts.jpg");
+  height: 81px;
+  width: 81px;
+  background-position: center;
+  background-size: cover;
+  border: 4px solid var(--black);
+  border-radius: 100%;
+}
+@media (min-width: 768px) {
+  .floating #right article aside {
+    height: 106px;
+    width: 106px;
+  }
 }
 @media (min-width: 768px) {
   .floating {
@@ -839,6 +888,65 @@ textarea {
 }
 #hero2 .section {
   grid-area: section;
+}
+#hero2 .section section {
+  background-image: url("../img/ryuga.jpg");
+  width: 100vw;
+  height: 63vh;
+  background-position: right;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  #hero2 .section section {
+    width: 50vw;
+    height: 58vh;
+  }
+}
+@media (min-width: 1024px) {
+  #hero2 .section section {
+    width: 60vw;
+    height: 75vh;
+  }
+}
+@media (min-width: 1440px) {
+  #hero2 .section section {
+    width: 60vw;
+    height: 76vh;
+  }
+}
+#hero2 .section aside section {
+  background-image: url("../img/demongod.jpg");
+  height: 85vh;
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  #hero2 .section aside section {
+    width: 50vw;
+    height: 58vh;
+  }
+}
+@media (min-width: 1024px) {
+  #hero2 .section aside section {
+    width: 40vw;
+    height: 75vh;
+  }
+}
+@media (min-width: 1440px) {
+  #hero2 .section aside section {
+    height: 38vh;
+    width: 40vw;
+  }
+}
+@media (min-width: 1440px) {
+  #hero2 .section aside article {
+    background-image: url("../img/pegasusinhand.jpg");
+    height: 38vh;
+    width: 40vw;
+    background-position: center;
+    background-size: cover;
+  }
 }
 @media (min-width: 768px) {
   #hero2 .section {
@@ -911,11 +1019,29 @@ textarea {
     margin-top: 24px;
   }
 }
+#news article {
+  height: 164px;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  #news article {
+    height: 184px;
+  }
+}
+@media (min-width: 1024px) {
+  #news article {
+    height: 164px;
+  }
+}
 #news #card1 {
   grid-area: card1;
   background-color: #FFD507;
   margin-top: 16px;
   grid-template-areas: "banner banner banner" ". section .";
+}
+#news #card1 article {
+  background-image: url("../img/gingka.jpg");
 }
 #news #card2 {
   grid-area: card2;
@@ -923,11 +1049,17 @@ textarea {
   margin-top: 16px;
   grid-template-areas: "banner banner banner" ". section .";
 }
+#news #card2 article {
+  background-image: url("../img/kyoya.jpg");
+}
 #news #card3 {
   grid-area: card3;
   background-color: #FFD507;
   margin-top: 16px;
   grid-template-areas: "banner banner banner" ". section .";
+}
+#news #card3 article {
+  background-image: url("../img/ryuga2.jpg");
 }
 #news #card4 {
   grid-area: card4;
@@ -935,11 +1067,17 @@ textarea {
   margin-top: 16px;
   grid-template-areas: "banner banner banner" ". section .";
 }
+#news #card4 article {
+  background-image: url("../img/max.jpg");
+}
 #news #card5 {
   grid-area: card5;
   background-color: #FFD507;
   margin-top: 16px;
   grid-template-areas: "banner banner banner" ". section .";
+}
+#news #card5 article {
+  background-image: url("../img/evildude.jpg");
 }
 #news #title {
   grid-area: title;
@@ -966,7 +1104,7 @@ textarea {
     row-gap: 16px;
   }
 }
-#news li img {
+#news li article {
   grid-area: banner;
   width: 100%;
 }

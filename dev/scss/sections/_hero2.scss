@@ -4,6 +4,56 @@
     }
     .section{
         grid-area: section;
+        section{
+            background-image: url('../img/ryuga.jpg');
+            width: 100vw;
+            height: 63vh;
+            background-position: right;
+            background-size: cover;
+            @include md{
+                width: 50vw;
+                height: 58vh;
+            }
+            @include lg{
+                width: 60vw;
+                height: 75vh;
+            }
+            @include xl{
+                width: 60vw;
+                height: 76vh;
+            }
+
+        }
+        aside{
+            section{
+                background-image: url('../img/demongod.jpg');
+            height: 85vh;
+            width: 100vw;
+            background-position: center;
+            background-size: cover;
+            @include md{
+                width: 50vw;
+                height: 58vh;
+            }
+            @include lg{
+                width: 40vw;
+                height: 75vh;
+            }
+            @include xl{
+                height: 38vh;
+            width: 40vw;
+            }
+        }
+        article{
+            @include xl{
+                background-image: url('../img/pegasusinhand.jpg');
+                height: 38vh;
+            width: 40vw;
+            background-position: center;
+            background-size: cover;
+            }
+        }
+        }
         @include md{
             display: grid;
             grid-template-columns: 50% auto;
