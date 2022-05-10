@@ -33,13 +33,13 @@
     },
     "\/deploy\/img\/beybladebanner.jpg" : {
       "ft" : 16384,
-      "iS" : 325078,
+      "iS" : 168424,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/beybladebanner.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 1,
+      "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -56,7 +56,7 @@
     },
     "\/deploy\/img\/demongod.jpg" : {
       "ft" : 16384,
-      "iS" : 41355,
+      "iS" : 82513,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/demongod.jpg",
@@ -69,7 +69,7 @@
     },
     "\/deploy\/img\/evildude.jpg" : {
       "ft" : 16384,
-      "iS" : 155639,
+      "iS" : 36660,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/evildude.jpg",
@@ -82,7 +82,7 @@
     },
     "\/deploy\/img\/gingka.jpg" : {
       "ft" : 16384,
-      "iS" : 78949,
+      "iS" : 56830,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/gingka.jpg",
@@ -95,7 +95,7 @@
     },
     "\/deploy\/img\/kyoya.jpg" : {
       "ft" : 16384,
-      "iS" : 89187,
+      "iS" : 41920,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/kyoya.jpg",
@@ -118,7 +118,7 @@
     },
     "\/deploy\/img\/max.jpg" : {
       "ft" : 16384,
-      "iS" : 80071,
+      "iS" : 54349,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/max.jpg",
@@ -131,7 +131,7 @@
     },
     "\/deploy\/img\/parts.jpg" : {
       "ft" : 16384,
-      "iS" : 98514,
+      "iS" : 10750,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/parts.jpg",
@@ -142,9 +142,9 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/pegasus.jpeg" : {
+    "\/deploy\/img\/pegasus.jpg" : {
       "ft" : 16384,
-      "iS" : 111382,
+      "iS" : 10792,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/pegasus.jpg",
@@ -157,7 +157,7 @@
     },
     "\/deploy\/img\/pegasusinhand.jpg" : {
       "ft" : 16384,
-      "iS" : 48478,
+      "iS" : 33891,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/pegasusinhand.jpg",
@@ -180,7 +180,7 @@
     },
     "\/deploy\/img\/ryuga.jpg" : {
       "ft" : 16384,
-      "iS" : 64193,
+      "iS" : 68171,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/ryuga.jpg",
@@ -193,7 +193,7 @@
     },
     "\/deploy\/img\/ryuga2.jpg" : {
       "ft" : 16384,
-      "iS" : 444182,
+      "iS" : 54745,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/ryuga2.jpg",
