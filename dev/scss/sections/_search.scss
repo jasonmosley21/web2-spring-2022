@@ -16,7 +16,11 @@
             margin-left: 8px;
             border: none;
             border-radius: 3.5px;
-            background-color: var(--gray);
+            background-color: var(--black);
+            &:hover{
+                background-color: var(--gray);
+                cursor: pointer;
+            }
         }
         @include md{
             margin: 16px 0 24px;

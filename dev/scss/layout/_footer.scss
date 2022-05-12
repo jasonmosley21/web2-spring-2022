@@ -12,6 +12,13 @@
 .social{
     display: flex;
     column-gap: 16px;
+    a{
+        color: var(--black);
+        &:hover{
+            color: var(--gray);
+            cursor: pointer;
+        }
+    }
     @include lg{
         justify-content: flex-end;
     }
@@ -55,6 +62,15 @@
     #locations{
         grid-area: locations;
         margin-bottom: 24px;
+        a:link, a:visited{
+            color: var(--white);
+            transition: .25s;
+            
+            &:hover, &:active{
+                color: var(--gray);
+            }
+        }
+        
         img{
             width: 24px;
         }
@@ -76,6 +92,10 @@
                 border: none;
                 background-color: var(--black);
                 color: var(--white);
+                &:hover{
+                    background-color: var(--gray);
+                    cursor: pointer;
+                }
             }
             @include md{
                 margin-bottom: 80px;

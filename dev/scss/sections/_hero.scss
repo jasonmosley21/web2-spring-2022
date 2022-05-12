@@ -3,7 +3,7 @@
         background-image: url('../img/beybladebanner.jpg');
         background-size: cover;
         height: 27vh;
-        width: 100vw;
+        width: 100%;
         background-position: center;
         @include md{
             height: 40vh;
@@ -24,6 +24,9 @@
             display: flex;
             align-items: center;
             color: var(--white);
+            &:hover{
+                cursor: pointer;
+            }
             span{
                 font-weight: 600;
                 font-size: rem-calc(16);
@@ -34,7 +37,7 @@
             }
         }
         #heroleft{
-            background-color: #2b292e;
+            background-color: var(--black);
             
             >div{
                 margin: 16px 0 48px 0;

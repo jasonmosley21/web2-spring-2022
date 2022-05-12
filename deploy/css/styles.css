@@ -515,6 +515,13 @@ textarea {
   display: flex;
   column-gap: 16px;
 }
+.social a {
+  color: var(--black);
+}
+.social a:hover {
+  color: var(--gray);
+  cursor: pointer;
+}
 @media (min-width: 1024px) {
   .social {
     justify-content: flex-end;
@@ -565,6 +572,13 @@ textarea {
   grid-area: locations;
   margin-bottom: 24px;
 }
+.footer #locations a:link, .footer #locations a:visited {
+  color: var(--white);
+  transition: 0.25s;
+}
+.footer #locations a:link:hover, .footer #locations a:link:active, .footer #locations a:visited:hover, .footer #locations a:visited:active {
+  color: var(--gray);
+}
 .footer #locations img {
   width: 24px;
 }
@@ -587,6 +601,10 @@ textarea {
   border: none;
   background-color: var(--black);
   color: var(--white);
+}
+.footer #newsletter > div button:hover {
+  background-color: var(--gray);
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   .footer #newsletter > div {
@@ -661,7 +679,11 @@ textarea {
   margin-left: 8px;
   border: none;
   border-radius: 3.5px;
+  background-color: var(--black);
+}
+#search > div button:hover {
   background-color: var(--gray);
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   #search > div {
@@ -678,7 +700,7 @@ textarea {
   background-image: url("../img/beybladebanner.jpg");
   background-size: cover;
   height: 27vh;
-  width: 100vw;
+  width: 100%;
   background-position: center;
 }
 @media (min-width: 768px) {
@@ -704,6 +726,9 @@ textarea {
   align-items: center;
   color: var(--white);
 }
+.stripe button:hover {
+  cursor: pointer;
+}
 .stripe button span {
   font-weight: 600;
   font-size: 1rem;
@@ -713,7 +738,7 @@ textarea {
   margin-left: 8px;
 }
 .stripe #heroleft {
-  background-color: #2b292e;
+  background-color: var(--black);
 }
 .stripe #heroleft > div {
   margin: 16px 0 48px 0;
@@ -787,9 +812,6 @@ textarea {
   }
 }
 
-.floating {
-  display: grid;
-}
 .floating h1 {
   font-weight: 400;
   font-size: 24px;
@@ -808,6 +830,10 @@ textarea {
   background-color: var(--black);
   color: var(--white);
   border: none;
+}
+.floating button:hover {
+  background-color: var(--gray);
+  cursor: pointer;
 }
 .floating img {
   width: 100%;
@@ -872,6 +898,7 @@ textarea {
 }
 @media (min-width: 768px) {
   .floating {
+    display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". cards .";
   }
@@ -891,59 +918,59 @@ textarea {
 }
 #hero2 .section section {
   background-image: url("../img/ryuga.jpg");
-  width: 100vw;
+  width: 100%;
   height: 63vh;
   background-position: right;
   background-size: cover;
 }
 @media (min-width: 768px) {
   #hero2 .section section {
-    width: 50vw;
+    width: 100%;
     height: 58vh;
   }
 }
 @media (min-width: 1024px) {
   #hero2 .section section {
-    width: 60vw;
+    width: 100%;
     height: 75vh;
   }
 }
 @media (min-width: 1440px) {
   #hero2 .section section {
-    width: 60vw;
+    width: 100%;
     height: 76vh;
   }
 }
 #hero2 .section aside section {
   background-image: url("../img/demongod.jpg");
   height: 85vh;
-  width: 100vw;
+  width: 100%;
   background-position: center;
   background-size: cover;
 }
 @media (min-width: 768px) {
   #hero2 .section aside section {
-    width: 50vw;
+    width: 100%;
     height: 58vh;
   }
 }
 @media (min-width: 1024px) {
   #hero2 .section aside section {
-    width: 40vw;
+    width: 100%;
     height: 75vh;
   }
 }
 @media (min-width: 1440px) {
   #hero2 .section aside section {
     height: 38vh;
-    width: 40vw;
+    width: 100%;
   }
 }
 @media (min-width: 1440px) {
   #hero2 .section aside article {
     background-image: url("../img/pegasusinhand.jpg");
     height: 38vh;
-    width: 40vw;
+    width: 100%;
     background-position: center;
     background-size: cover;
   }
@@ -1012,6 +1039,10 @@ textarea {
   color: var(--white);
   background-color: var(--black);
   border: none;
+}
+#news button:hover {
+  background-color: var(--gray);
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   #news button {

@@ -28,6 +28,10 @@
         color: var(--white);
         background-color: var(--black);
         border: none;
+        &:hover{
+            background-color: var(--gray);
+            cursor: pointer;
+        }
         @include md{
             margin-top: 48px;
             margin-top: 24px;
