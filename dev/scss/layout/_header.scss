@@ -2,8 +2,15 @@
     Header
 ============= */
 #header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
     background-color: var(--red);
     section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         img{
             width: 120px;
             margin: 16px 0;
@@ -14,6 +21,14 @@
             @include lg{
                 width: 184px;
             }
+        }
+        button{
+            font-size: rem-calc(24);
+            border: none;
+            background-color: transparent;
+            color: var(--black);
+            padding: 12px;
+            cursor: pointer;
         }
     }
 }

@@ -1,3 +1,21 @@
 /* =============
     Navigation
 ============= */
+nav{
+    
+	background-color: var(--red);
+	height: 100vh;
+	padding: 16px;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100vw;
+    @include lg {
+		background-color: var(--white);
+		display: block;
+		height: 100%;
+		padding: 0;
+		position: relative;
+		width: 100%;
+	}
+}

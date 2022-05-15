@@ -478,11 +478,40 @@ textarea {
 /* =============
     Navigation
 ============= */
+nav {
+  background-color: var(--red);
+  height: 100vh;
+  padding: 16px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100vw;
+}
+@media (min-width: 1024px) {
+  nav {
+    background-color: var(--white);
+    display: block;
+    height: 100%;
+    padding: 0;
+    position: relative;
+    width: 100%;
+  }
+}
+
 /* =============
     Header
 ============= */
 #header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
   background-color: var(--red);
+}
+#header section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 #header section img {
   width: 120px;
@@ -498,6 +527,14 @@ textarea {
   #header section img {
     width: 184px;
   }
+}
+#header section button {
+  font-size: 1.5rem;
+  border: none;
+  background-color: transparent;
+  color: var(--black);
+  padding: 12px;
+  cursor: pointer;
 }
 
 /* =============
@@ -517,6 +554,7 @@ textarea {
 }
 .social a {
   color: var(--black);
+  font-size: 1.5rem;
 }
 .social a:hover {
   color: var(--gray);
@@ -662,6 +700,7 @@ textarea {
 }
 
 #search {
+  margin-top: 90px;
   background-color: var(--white);
 }
 #search > div form {
