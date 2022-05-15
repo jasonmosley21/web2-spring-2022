@@ -1,6 +1,16 @@
 #search{
-    margin-top: 90px;
+    
     background-color: var(--white);
+    margin-top: 90px;
+    @include md{
+        margin-top: 105px;
+    }
+    @include lg{
+        margin-top: 121px;
+    }
+    @include xl{
+        margin-top: 121px;
+    }
     >div{
         form{
             display: flex;

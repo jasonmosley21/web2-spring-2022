@@ -2,7 +2,7 @@
     Navigation
 ============= */
 nav{
-    
+    display: none;
 	background-color: var(--red);
 	height: 100vh;
 	padding: 16px;
@@ -10,12 +10,53 @@ nav{
 	right: 0;
 	top: 0;
 	width: 100vw;
+    box-sizing: border-box;
     @include lg {
-		background-color: var(--white);
 		display: block;
 		height: 100%;
 		padding: 0;
 		position: relative;
 		width: 100%;
 	}
+    aside{
+        display: flex;
+        justify-content: flex-end;
+    }
+    #links{
+        display: flex;
+        justify-content: center;
+    
+        @include lg{
+            justify-content: flex-end;
+            align-items: center;
+        height: 100%;
+        }
+        ul{
+            text-align: center;
+            font-size: rem-calc(24);
+            font-weight: 300;
+         @include lg{
+             display: flex;
+         column-gap: 16px;
+         }
+         
+            a:link, a:visited{
+                color: var(--white);
+                transition: .25s;
+               text-decoration: none;
+               padding-bottom: 16px;
+               display: inline-block;
+               @include lg{
+                padding: 0px;
+            }
+                
+                &:hover, &:active{
+                    color: var(--gray);
+                }
+            }
+            
+            
+        }
+    }
+   
 }

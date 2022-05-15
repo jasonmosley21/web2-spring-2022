@@ -415,6 +415,14 @@ ul {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.show-menu {
+  display: block !important;
+}
+
 /* =============
     Typography
 ============= */
@@ -479,6 +487,7 @@ textarea {
     Navigation
 ============= */
 nav {
+  display: none;
   background-color: var(--red);
   height: 100vh;
   padding: 16px;
@@ -486,16 +495,57 @@ nav {
   right: 0;
   top: 0;
   width: 100vw;
+  box-sizing: border-box;
 }
 @media (min-width: 1024px) {
   nav {
-    background-color: var(--white);
     display: block;
     height: 100%;
     padding: 0;
     position: relative;
     width: 100%;
   }
+}
+nav aside {
+  display: flex;
+  justify-content: flex-end;
+}
+nav #links {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 1024px) {
+  nav #links {
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+  }
+}
+nav #links ul {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+@media (min-width: 1024px) {
+  nav #links ul {
+    display: flex;
+    column-gap: 16px;
+  }
+}
+nav #links ul a:link, nav #links ul a:visited {
+  color: var(--white);
+  transition: 0.25s;
+  text-decoration: none;
+  padding-bottom: 16px;
+  display: inline-block;
+}
+@media (min-width: 1024px) {
+  nav #links ul a:link, nav #links ul a:visited {
+    padding: 0px;
+  }
+}
+nav #links ul a:link:hover, nav #links ul a:link:active, nav #links ul a:visited:hover, nav #links ul a:visited:active {
+  color: var(--gray);
 }
 
 /* =============
@@ -507,6 +557,11 @@ nav {
   top: 0;
   left: 0;
   background-color: var(--red);
+}
+@media (min-width: 1024px) {
+  #header {
+    grid-template-columns: auto 990px auto;
+  }
 }
 #header section {
   display: flex;
@@ -535,6 +590,11 @@ nav {
   color: var(--black);
   padding: 12px;
   cursor: pointer;
+}
+@media (min-width: 1024px) {
+  #header section button {
+    display: none;
+  }
 }
 
 /* =============
@@ -613,6 +673,7 @@ nav {
 .footer #locations a:link, .footer #locations a:visited {
   color: var(--white);
   transition: 0.25s;
+  text-decoration: none;
 }
 .footer #locations a:link:hover, .footer #locations a:link:active, .footer #locations a:visited:hover, .footer #locations a:visited:active {
   color: var(--gray);
@@ -700,8 +761,23 @@ nav {
 }
 
 #search {
-  margin-top: 90px;
   background-color: var(--white);
+  margin-top: 90px;
+}
+@media (min-width: 768px) {
+  #search {
+    margin-top: 105px;
+  }
+}
+@media (min-width: 1024px) {
+  #search {
+    margin-top: 121px;
+  }
+}
+@media (min-width: 1440px) {
+  #search {
+    margin-top: 121px;
+  }
 }
 #search > div form {
   display: flex;
@@ -851,53 +927,53 @@ nav {
   }
 }
 
-.floating h1 {
+#floating h1 {
   font-weight: 400;
   font-size: 24px;
 }
 @media (min-width: 768px) {
-  .floating h1 {
+  #floating h1 {
     margin-bottom: 32px;
   }
 }
-.floating span {
+#floating span {
   font-weight: 600;
   font-size: 16px;
 }
-.floating button {
+#floating button {
   padding: 8px 16px;
   background-color: var(--black);
   color: var(--white);
   border: none;
 }
-.floating button:hover {
+#floating button:hover {
   background-color: var(--gray);
   cursor: pointer;
 }
-.floating img {
+#floating img {
   width: 100%;
 }
-.floating > div {
+#floating > div {
   grid-area: cards;
 }
 @media (min-width: 768px) {
-  .floating > div {
+  #floating > div {
     display: grid;
     grid-template-columns: 50% auto;
     grid-template-areas: "left right";
     column-gap: 16px;
   }
 }
-.floating #left {
+#floating #left {
   background-color: #FFD507;
   grid-area: left;
   margin-bottom: 16px;
 }
-.floating #left article {
+#floating #left article {
   display: flex;
   justify-content: space-between;
 }
-.floating #left article aside {
+#floating #left article aside {
   background-image: url("../img/pegasus.jpg");
   height: 81px;
   width: 81px;
@@ -907,20 +983,20 @@ nav {
   border-radius: 100%;
 }
 @media (min-width: 768px) {
-  .floating #left article aside {
+  #floating #left article aside {
     height: 106px;
     width: 106px;
   }
 }
-.floating #right {
+#floating #right {
   grid-area: right;
   background-color: #FFD507;
 }
-.floating #right article {
+#floating #right article {
   display: flex;
   justify-content: space-between;
 }
-.floating #right article aside {
+#floating #right article aside {
   background-image: url("../img/parts.jpg");
   height: 81px;
   width: 81px;
@@ -930,20 +1006,20 @@ nav {
   border-radius: 100%;
 }
 @media (min-width: 768px) {
-  .floating #right article aside {
+  #floating #right article aside {
     height: 106px;
     width: 106px;
   }
 }
 @media (min-width: 768px) {
-  .floating {
+  #floating {
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". cards .";
   }
 }
 @media (min-width: 1024px) {
-  .floating {
+  #floating {
     grid-template-columns: auto 990px auto;
     grid-template-areas: ". cards .";
   }

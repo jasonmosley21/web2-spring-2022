@@ -7,6 +7,9 @@
     top: 0;
     left: 0;
     background-color: var(--red);
+    @include lg{
+        grid-template-columns: auto 990px auto;
+    }
     section{
         display: flex;
         justify-content: space-between;
@@ -29,6 +32,9 @@
             color: var(--black);
             padding: 12px;
             cursor: pointer;
+            @include lg{
+                display: none;
+            }
         }
     }
 }
