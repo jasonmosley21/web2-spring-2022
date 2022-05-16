@@ -1,9 +1,9 @@
 #search{
     
     background-color: var(--white);
-    margin-top: 90px;
+    margin-top: 97px;
     @include md{
-        margin-top: 105px;
+        margin-top: 111px;
     }
     @include lg{
         margin-top: 121px;
@@ -14,13 +14,18 @@
     >div{
         form{
             display: flex;
-            margin: 16px 0;
+            
         }
         input{
             box-sizing: border-box;
             border: none;
             border-bottom: 1px solid var(--black);
             width: 100%;
+            font-size: rem-calc(16);
+            font-weight: 300;
+            @include md{
+                font-size: rem-calc(32);
+            }
         }
         button{
             padding: 8px 16px;
@@ -32,9 +37,22 @@
                 background-color: var(--gray);
                 cursor: pointer;
             }
+            img{
+                width: 24px;
+                @include md{
+                    width: 32px;
+                }
+                @include lg{
+                    width: 32px;
+                }
+                @include xl{
+                    width: 32px;
+                }
+            }
         }
+        margin: 16px 0;
         @include md{
-            margin: 16px 0 24px;
+            margin: 24px 0;
         }
         @include lg{
             margin: 24px 0;

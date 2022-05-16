@@ -762,11 +762,11 @@ nav #links ul a:link:hover, nav #links ul a:link:active, nav #links ul a:visited
 
 #search {
   background-color: var(--white);
-  margin-top: 90px;
+  margin-top: 97px;
 }
 @media (min-width: 768px) {
   #search {
-    margin-top: 105px;
+    margin-top: 111px;
   }
 }
 @media (min-width: 1024px) {
@@ -779,15 +779,24 @@ nav #links ul a:link:hover, nav #links ul a:link:active, nav #links ul a:visited
     margin-top: 121px;
   }
 }
+#search > div {
+  margin: 16px 0;
+}
 #search > div form {
   display: flex;
-  margin: 16px 0;
 }
 #search > div input {
   box-sizing: border-box;
   border: none;
   border-bottom: 1px solid var(--black);
   width: 100%;
+  font-size: 1rem;
+  font-weight: 300;
+}
+@media (min-width: 768px) {
+  #search > div input {
+    font-size: 2rem;
+  }
 }
 #search > div button {
   padding: 8px 16px;
@@ -800,9 +809,27 @@ nav #links ul a:link:hover, nav #links ul a:link:active, nav #links ul a:visited
   background-color: var(--gray);
   cursor: pointer;
 }
+#search > div button img {
+  width: 24px;
+}
+@media (min-width: 768px) {
+  #search > div button img {
+    width: 32px;
+  }
+}
+@media (min-width: 1024px) {
+  #search > div button img {
+    width: 32px;
+  }
+}
+@media (min-width: 1440px) {
+  #search > div button img {
+    width: 32px;
+  }
+}
 @media (min-width: 768px) {
   #search > div {
-    margin: 16px 0 24px;
+    margin: 24px 0;
   }
 }
 @media (min-width: 1024px) {
@@ -856,7 +883,7 @@ nav #links ul a:link:hover, nav #links ul a:link:active, nav #links ul a:visited
   background-color: var(--black);
 }
 .stripe #heroleft > div {
-  margin: 16px 0 48px 0;
+  margin: 16px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -865,6 +892,11 @@ nav #links ul a:link:hover, nav #links ul a:link:active, nav #links ul a:visited
   font-weight: 700;
   font-size: 1rem;
   color: var(--white);
+}
+@media (min-width: 1024px) {
+  .stripe #heroleft > div h1 {
+    font-size: 1.5rem;
+  }
 }
 .stripe #heroleft > div h2 {
   font-weight: 600;
@@ -876,11 +908,6 @@ nav #links ul a:link:hover, nav #links ul a:link:active, nav #links ul a:visited
   font-size: 1rem;
   color: var(--white);
 }
-@media (min-width: 768px) {
-  .stripe #heroleft > div {
-    margin: 16px 0 8px 0;
-  }
-}
 @media (min-width: 1024px) {
   .stripe #heroleft {
     grid-template-columns: auto 463px 16px;
@@ -890,7 +917,7 @@ nav #links ul a:link:hover, nav #links ul a:link:active, nav #links ul a:visited
   background-color: #66636A;
 }
 .stripe #heroright > div {
-  margin: 16px 0 48px 0;
+  margin: 16px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -904,11 +931,6 @@ nav #links ul a:link:hover, nav #links ul a:link:active, nav #links ul a:visited
   font-weight: 600;
   font-size: 1rem;
   color: var(--white);
-}
-@media (min-width: 768px) {
-  .stripe #heroright > div {
-    margin: 24px 0 24px;
-  }
 }
 @media (min-width: 1024px) {
   .stripe #heroright {
@@ -961,7 +983,6 @@ nav #links ul a:link:hover, nav #links ul a:link:active, nav #links ul a:visited
     display: grid;
     grid-template-columns: 50% auto;
     grid-template-areas: "left right";
-    column-gap: 16px;
   }
 }
 #floating #left {
@@ -969,9 +990,16 @@ nav #links ul a:link:hover, nav #links ul a:link:active, nav #links ul a:visited
   grid-area: left;
   margin-bottom: 16px;
 }
+@media (min-width: 768px) {
+  #floating #left {
+    margin-bottom: 0;
+    margin-right: 8px;
+  }
+}
 #floating #left article {
   display: flex;
   justify-content: space-between;
+  margin: 16px 0;
 }
 #floating #left article aside {
   background-image: url("../img/pegasus.jpg");
@@ -992,9 +1020,15 @@ nav #links ul a:link:hover, nav #links ul a:link:active, nav #links ul a:visited
   grid-area: right;
   background-color: #FFD507;
 }
+@media (min-width: 768px) {
+  #floating #right {
+    margin-left: 8px;
+  }
+}
 #floating #right article {
   display: flex;
   justify-content: space-between;
+  margin: 16px 0;
 }
 #floating #right article aside {
   background-image: url("../img/parts.jpg");

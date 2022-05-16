@@ -40,7 +40,7 @@
             background-color: var(--black);
             
             >div{
-                margin: 16px 0 48px 0;
+                margin: 16px 0;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
@@ -48,6 +48,9 @@
                     font-weight: 700;
                     font-size: rem-calc(16);
                     color: var(--white);
+                    @include lg{
+                        font-size: rem-calc(24);
+                    }
                 }
                 h2{
                     font-weight: 600;
@@ -59,9 +62,7 @@
                     font-size: rem-calc(16);
                     color: var(--white);
                 }
-                @include md{
-                    margin: 16px 0 8px 0;
-                }
+                
                 
             }
             @include lg{
@@ -72,7 +73,7 @@
             background-color: #66636A;
             
             >div{
-                margin: 16px 0 48px 0;
+                margin: 16px 0;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
@@ -86,9 +87,7 @@
                         color: var(--white);
                     }
                 }
-                @include md{
-                    margin: 24px 0 24px;
-                }
+                
                 
             }
             @include lg{

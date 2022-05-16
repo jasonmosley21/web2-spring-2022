@@ -30,16 +30,20 @@
                 display: grid;
                 grid-template-columns: 50% auto;
                 grid-template-areas: "left right";
-                column-gap: 16px;
             }
         }
         #left{
             background-color: #FFD507;
             grid-area: left;
             margin-bottom: 16px;
+            @include md{
+                margin-bottom: 0;
+                margin-right: 8px;
+            }
             article{
                 display: flex;
                 justify-content: space-between;
+                margin: 16px 0;
                 aside{
                     background-image: url('../img/pegasus.jpg');
                     height: 81px;
@@ -58,9 +62,13 @@
         #right{
             grid-area: right;
             background-color: #FFD507;
+            @include md{
+                margin-left: 8px;
+            }
             article{
                 display: flex;
                 justify-content: space-between;
+                margin: 16px 0;
                 aside{
                     background-image: url('../img/parts.jpg');
                     height: 81px;
